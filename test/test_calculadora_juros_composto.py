@@ -35,8 +35,8 @@ def test_calcular_juros_compostos(capital_investido, taxa_juros, tempo):
     # tempo como texto
     with pytest.raises(TypeError, match="O tempo deve ser um número \(int ou float\)."):
         calcular_juros_compostos(capital_investido, taxa_juros, "dois")
-    
-    
+
+
 
             
 
