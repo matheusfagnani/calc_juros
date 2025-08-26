@@ -25,7 +25,7 @@ def test_calcular_juros_compostos(capital_investido, taxa_juros, tempo):
     # test com valores com texto
 
     # capital_investido como texto
-    with pytest.raises(TypeError, match="O capital investido deve ser um número."):
+    with pytest.raises(TypeError, match="O capital investido deve ser um número \(int ou float\)."):
         calcular_juros_compostos("mil", taxa_juros, tempo)
     
     # taxa_juros como texto
